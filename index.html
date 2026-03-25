@@ -6,7 +6,7 @@
     <title>E-commerce Master</title>
   </head>
   <body>
-    <header class="cabecalho">
+    <header>
       <a href="/"
         ><img src="./assets/images/logo.svg" alt="Logo Dev em Dobro"
       /></a>
@@ -86,7 +86,7 @@
         </ul>
       </nav>
 
-      <nav>
+      <address>
         <h3>Endereço</h3>
         <ul>
           <li><a href="#">Rua Vale do Silicio</a></li>
@@ -97,7 +97,7 @@
             <a href="mailto:contato@devstore.com">contato@devstore.com</a>
           </li>
         </ul>
-      </nav>
+      </address>
       <div>
         <p>&copy; 2026 - Todos os direitos reservados.</p>
       </div>
@@ -139,7 +139,7 @@
                   <td>R$ 89,00</td>
                   <td><input type="number" value="1" min="1" /></td>
                   <td>R$ 89,00</td>
-                  <td><button id="deletar">Remover Produto</button></td>
+                  <td><button class="btn-remover">Remover Produto</button></td>
                 </tr>
 
                 <tr>
@@ -152,7 +152,7 @@
                   <td>R$ 29,00</td>
                   <td><input type="number" value="1" min="1" /></td>
                   <td>R$ 29,00</td>
-                  <td><button id="deletar">Remover Produto</button></td>
+                  <td><button class="btn-remover">Remover Produto</button></td>
                 </tr>
               </tbody>
             </table>
@@ -165,7 +165,14 @@
       </div>
     </div>
 
-    <script src="https://unpkg.com/micromodal/dist/micromodal.min.js
-"></script>
+    <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+
+    <script>
+      MicroModal.init();
+
+      document
+        .querySelector("body > header button")
+        .addEventListener("click", () => MicroModal.show("modal-1"));
+    </script>
   </body>
 </html>
