@@ -3,29 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/reset.css">
+
     <title>E-commerce Master</title>
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <a href="/"
-        ><img src="./assets/images/logo.svg" alt="Logo Dev em Dobro"
-      /></a>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#sobre">Sobre nós</a></li>
-          <li><a href="#produtos">Produtos</a></li>
-          <li><a href="#faq">Perguntas Frequentes</a></li>
-          <li><a href="#contato">Fale Conosco</a></li>
-        </ul>
-      </nav>
-      <button>
-        <img
-          src="/assets/images/icone_carrinho.svg"
-          alt="carrinho-de-compras"
-        />
-      </button>
+      <div class="header-conteudo">
+        <div class="header-esquerda">
+          <button class="menu-hamburguer">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <a class="logo" href="/"
+            ><img src="./assets/images/logo.svg" alt="Logo Dev em Dobro"
+          /></a>
+        </div>
+        <nav class="menu-principal">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#faq">Perguntas</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+        <button class="btn-carrinho" data-micromodal-trigger="modal-1">
+          <img
+            src="/assets/images/icone_carrinho.svg"
+            alt="carrinho-de-compras"
+          />
+          <span id="cart-count">0</span>
+        </button>
+      </div>
     </header>
     <main>
       <section>
@@ -72,8 +94,8 @@
           <li><a href="/">Home</a></li>
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#produtos">Produtos</a></li>
-          <li><a href="#faq">Perguntas Frequentes</a></li>
-          <li><a href="#contato">Fale Conosco</a></li>
+          <li><a href="#faq">Perguntas/a></li>
+          <li><a href="#contato">Contato</a></li>
         </ul>
       </nav>
 

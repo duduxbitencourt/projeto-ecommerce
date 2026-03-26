@@ -1,0 +1,19 @@
+:root {
+  --cor-neutra-escura: #111111;
+  --cor-neutra-clara: #ffffff;
+  --cor-primaria: #6528d3;
+  --cor-primaria-hover: #834de8;
+  --cor-cinza-escura: #29272a;
+  --cor-cinza-clara: #ededed;
+  --cor-roxa-clara: #bca2ed;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--cor-neutra-escura);
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
