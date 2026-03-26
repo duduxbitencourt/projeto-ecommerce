@@ -1,6 +1,5 @@
 header {
   grid-area: header;
-  background-color: var(--cor-cinza-escura);
   padding: 1.8rem 0;
 }
 
@@ -67,7 +66,7 @@ header.menu-ativo .menu-principal {
   display: block;
   height: 4px;
   width: 100%;
-  background-color: white;
+  background-color: var(--cor-neutra-clara);
 }
 
 .btn-carrinho {
@@ -107,9 +106,9 @@ header.menu-ativo .menu-principal {
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1170px) {
   header {
-    max-width: 1440px;
+    max-width: 1170px;
     margin: 0 auto;
   }
 }
