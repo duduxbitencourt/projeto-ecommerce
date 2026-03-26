@@ -12,10 +12,10 @@ main .produtos h2 {
 }
 
 main .produtos ul {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 368px));
+  justify-content: center;
   gap: 2rem;
-  align-items: center;
 }
 
 main .produtos .produto {
@@ -23,8 +23,7 @@ main .produtos .produto {
   border-radius: 14px;
   display: flex;
   flex-direction: column;
-  width: 100%;            /* adicionar */
-  align-self: center;
+  width: 100%;          
 }
 
 main .produtos .produto figure {
