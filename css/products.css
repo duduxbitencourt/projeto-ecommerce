@@ -13,9 +13,9 @@ main .produtos h2 {
 
 main .produtos ul {
   display: grid;
-  grid-template-columns: repeat(3, minmax(300px, 368px));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 368px));
   justify-content: center;
-  gap: 2rem;
+  gap: rem;
 }
 
 main .produtos .produto {
