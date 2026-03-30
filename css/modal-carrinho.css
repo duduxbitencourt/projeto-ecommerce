@@ -49,7 +49,6 @@ thead th {
   font-size: 1.2rem;
 }
 
-
 tbody td {
   padding: 0.8rem;
   vertical-align: middle;
@@ -123,4 +122,62 @@ td .btn-remover {
 
 .container-finalizar .btn-finalizar:hover {
   background-color: var(--cor-primaria-hover);
+}
+
+@media (min-width: 769px) {
+  .modal.is-open {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(00, 00, 00, 0.8);
+  }
+
+  .modal .container {
+    background-color: var(--cor-cinza-escura);
+    max-width: 720px;
+    height: auto;
+    padding: 1.5rem;
+    margin: 0 auto;
+  }
+
+  .modal .container th {
+    background-color: var(--cor-neutra-escura);
+  }
+
+  tbody td {
+    border: 2px solid black;
+    padding: 0.5rem;
+  }
+
+  table {
+    border-collapse: collapse;
+  }
+
+  .th-produto,
+  .th-total,
+  .td-produto,
+  .td-preco-total {
+    display: table-cell;
+    white-space: nowrap;
+  }
+
+  td img {
+    width: 48px;
+    height: auto;
+    border-radius: 4px;
+  }
+
+  .container-finalizar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .total-carrinho {
+    text-align: right;
+  }
+
+  .btn-finalizar {
+    width: 369px;
+  }
 }
