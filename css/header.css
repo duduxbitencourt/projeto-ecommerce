@@ -104,6 +104,10 @@ header.menu-ativo .menu-principal {
   header .menu-principal ul {
     flex-direction: row;
   }
+
+  .menu-hamburguer {
+    display: none;
+  }
 }
 
 @media (min-width: 1170px) {
