@@ -15,7 +15,7 @@ main .produtos ul {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 368px));
   justify-content: center;
-  gap: rem;
+  gap: 1.5rem;
 }
 
 main .produtos .produto {
@@ -99,8 +99,6 @@ main .prod-info .btn-carrinho:hover {
   }
 
   main .produtos ul {
-    flex-direction: row;
-    flex-wrap: wrap;
     gap: 2rem;
   }
 }
