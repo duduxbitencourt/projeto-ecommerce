@@ -74,6 +74,7 @@ header.menu-ativo .menu-principal {
   border: none;
   padding: 0.5rem;
   position: relative;
+  cursor: pointer;
 }
 
 .btn-carrinho span {
