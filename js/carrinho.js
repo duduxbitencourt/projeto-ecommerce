@@ -85,3 +85,21 @@ function renderizarTabelaDoCarrinho() {
 }
 
 renderizarTabelaDoCarrinho();
+
+const corpoTabela = document.querySelector("#modal-1-content table tbody");
+if (corpoTabela) {
+  corpoTabela.addEventListener("click", evento => {
+    if (evento.target.classList.contains('btn-remover')){
+      const id = evento.target.dataset.id;
+      removerDoCarrinho(id);
+    }
+  });
+}
+
+function removerDoCarrinho(id) {
+  const produtos = obterProdutosDoCarrinho();
+  const carrinhoAtualizado = produtos.filter((produto) => produto.id !== id);
+  salvarProdutosNoCarrinho(carrinhoAtualizado);
+  atualizarContadorCarrinho();
+  renderizarTabelaDoCarrinho();
+}
