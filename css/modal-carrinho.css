@@ -187,4 +187,8 @@ td .btn-remover {
   .btn-finalizar {
     width: 369px;
   }
+
+  div.container {
+    border-radius: 2rem;
+  }
 }
